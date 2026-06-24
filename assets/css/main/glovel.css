@@ -129,15 +129,14 @@ a:hover {
 .menu-btn {
     font-size: 30px;
     cursor: pointer;
-    display: none;
 }
 
 /* Right Side Menu */
 .side-menu {
     position: fixed;
     top: 0;
-    right: -60%;
-    width: 50%;
+    right: -100%;
+    width: 300px;
     height: 100%;
     background: #1c1c1c;
     padding-top: 70px;
@@ -151,9 +150,8 @@ a:hover {
 
 /* Menu Links */
 .side-menu a {
-    font-size: 22px;
     text-decoration: none;
-    font-weight: 1000;
+    font-weight: 500;
 }
 
 /* Close Button */
@@ -166,6 +164,10 @@ a:hover {
     cursor: pointer;
 }
 
+.info{
+    background-color: #000;
+}
+
 /* Menu Open */
 .side-menu.active {
     right: 0;
@@ -173,14 +175,14 @@ a:hover {
 
 /* Mobile View */
 @media (max-width: 768px) {
-    .menu-btn {
+    /* .menu-btn {
         display: block;
-    }
+    } */
 
-    .menu {
+    /* .menu {
 
         display: none;
-    }
+    } */
 
     .m-senter {
         text-align: center;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-In">
+<html lang="hi">
 
 <head>
   <meta charset="UTF-8">
@@ -71,58 +71,58 @@
       font-size: 16px;
       cursor: pointer;
     }
+
+    .info-box {
+      position: fixed;
+      display: grid;
+      text-align: center;
+
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .info-box h2 {
+      margin: 0;
+    }
+
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .info-box {
+        width: 90%;
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   </style>
 </head>
 
 <body>
-  <!-- 
+
+
   <main>
+
 
     <section class="box">
       <h1>📲 Install Vishnupur SMR App</h1>
-      <p>अपने मोबाइल में ऐप इंस्टॉल करें</p>
-      <button id="installBtn">Add to Home Screen</button>
+      <p>Vishnupur की सेवाएं और अपडेट अपने मोबाइल पर प्राप्त करें।</p>
+      <button id="installBtn">Install App </button>
     </section>
 
-  </main> -->
 
-
-  <main>
-
-
-    <section class="box">
-  <h1>📲 Install Vishnupur SMR App</h1>
-  <p>Vishnupur की सेवाएं और अपडेट अपने मोबाइल पर प्राप्त करें।</p>
-  <button id="installBtn">Add to Home Screen</button>
-</section>
-
-
-<section class="info-box">
-  <h2>About Vishnupur SMR</h2>
-  <p>
-    Vishnupur SMR Vishnupur (Sitamarhi, Bihar) ka digital platform hai jahan
-    samudayik suchna, mahatvapurn ghoshnaayein, upyogi links aur sthaniya
-    jaankari uplabdh karayi jaati hai.
-  </p>
-</section>
-
-    <section class="box">
-      <h1>📲 Install Vishnupur SMR App</h1>
+    <section class="info-box">
+      <h2>ऐप इंस्टॉल क्यों करें?</h2>
 
       <p>
-        Vishnupur SMR (Sitamarhi, Bihar) का आधिकारिक डिजिटल ऐप इंस्टॉल करें।
-        गांव की महत्वपूर्ण घोषणाएं, सामुदायिक अपडेट, विकास कार्यों की जानकारी,
-        स्थानीय सेवाएं, उपयोगी लिंक और अन्य संसाधन सीधे अपने मोबाइल से एक्सेस करें।
-      </p>
-
-      <button id="installBtn">Add to Home Screen</button>
-
-      <p class="seo-text">
-        Vishnupur SMR App provides village information, community updates,
-        public notices, local resources, and development updates for residents
-        and visitors of Vishnupur, Sitamarhi, Bihar.
+        Vishnupur SMR ऐप के माध्यम से आपको महत्वपूर्ण सूचनाएँ, नई घोषणाएँ,
+        उपयोगी लिंक और स्थानीय जानकारी एक ही स्थान पर मिलेगी। होम स्क्रीन से
+        सीधे ऐप खोलें और नवीनतम अपडेट प्राप्त करें।
       </p>
     </section>
+
 
   </main>
 
