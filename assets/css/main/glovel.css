@@ -1,0 +1,192 @@
+@media (max-width: 768px) {
+
+    /* 1. Mobile  */
+    body {
+        font-size: 100%;
+    }
+
+    p {
+        font-size: 0.7rem !important;
+        line-height: 1.6;
+    }
+
+    span,
+    a,
+    b,
+    li {
+        font-size: 0.7rem !important;
+        color: #000;
+    }
+
+    h1 {
+        font-size: 1.1rem !important;
+    }
+
+    h2 {
+        font-size: 0.9rem !important;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+
+    a b {
+        color: blue;
+    }
+
+}
+
+/* 2. Desktop/Laptop:  */
+@media (min-width: 768px) {
+
+    p {
+        font-size: 1rem !important;
+        line-height: 1;
+    }
+
+    span,
+    a,
+    b,
+    li {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.4rem !important;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 1.3rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+
+
+
+
+
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 0 5px;
+    background: #fbfbfb;
+
+}
+
+.logo {
+    font-size: 0rem;
+}
+
+/* Navbar */
+.nav {
+    width: 100%;
+    /* padding: 15px 0px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li,
+a {
+    text-decoration: none;
+    display: block ;
+    margin: 5px;
+}
+
+a {
+    color: rgba(68, 117, 241, 0.758) ;
+}
+
+a:hover {
+    color: rgba(138, 56, 231, 0.983) !important;
+}
+
+/* Burger Menu Button */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Right Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -60%;
+    width: 50%;
+    height: 100%;
+    background: #1c1c1c;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: 0.4s ease;
+}
+
+/* Menu Links */
+.side-menu a {
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Menu Open */
+.side-menu.active {
+    right: 0;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+
+        display: none;
+    }
+
+    .m-senter {
+        text-align: center;
+    }
+
+    .m-senter h1 {
+        font-size: medium;
+    }
+}
