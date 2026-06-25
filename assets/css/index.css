@@ -7,19 +7,23 @@ section {
 }
 
 .se1 {
-    margin-top: 10vh;
+     margin-top: 5vh;
     background-color: #ffffd5;
 }
 
 @media (min-width:700px) {
 
-    .se1 {
+    /* .se1 {
         display: none;
-    }
+    } */
 
-    .se-u2 {
+    /* .se-u2 {
         display: none;
-    }
+    } */
+     
+     .se-u2 li{
+        padding: 2px;
+     }
 }
 
 .se-u2 {
@@ -196,6 +200,8 @@ body {
     padding: 1rem;
     overflow-y: auto;
 }
+
+
 
 .content-section {
     display: none;
