@@ -348,7 +348,8 @@
         <li class="li">
           <a href="https://codersusheel.netlify.app/" target="_blank">
             <div class="div">
-              <img class="div" src="https://haproid.netlify.app/assets/img/user/pro-susheel-01/susheel.webp" alt="codersusheel img">
+              <img class="div" src="https://haproid.netlify.app/assets/img/user/pro-susheel-01/susheel.webp"
+                alt="codersusheel img">
             </div>
             <b>susheelcoder</b>
           </a>
@@ -569,15 +570,22 @@
     <!-- Tumhara content -->
 
     <script>
-    if (
-        location.pathname === "/" ||
-        location.pathname === "/index.html"
-    ) {
+      function isInstalledPWA() {
+        return window.matchMedia('(display-mode: standalone)').matches ||
+          window.navigator.standalone === true;
+      }
+
+      if (isInstalledPWA()) {
+        console.log("App Installed");
         location.replace("/page/dashboard/");
-    }
+      } else {
+        console.log("Browser Mode");
+      }
     </script>
 
-</body>
+
+
+  </body>
   <script src="/2.JS/app.js"></script>
   <script src="/assets/js/script.js"></script>
 </body>
