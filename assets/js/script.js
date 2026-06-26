@@ -15,25 +15,15 @@ closeBtn.addEventListener("click", () => {
 
 
 const isPWA =
-    window.matchMedia('(display-mode: standalone)').matches ||
-    window.navigator.standalone === true;
+  window.matchMedia('(display-mode: standalone)').matches ||
+  window.navigator.standalone === true;
 
-const path = window.location.pathname;
-
-// Root page
-if (path === "/" || path === "/index.html") {
-    if (isPWA) {
-        window.location.replace("/page/dashboard/");
-    }
+if (
+  window.location.pathname.startsWith("/page/dashboard") &&
+  !isPWA
+) {
+  window.location.replace("/");
 }
-
-// Dashboard page
-if (path === "/page/dashboard/" || path === "/page/dashboard/index.html") {
-    if (!isPWA) {
-        window.location.replace("/");
-    }
-}
-
 
 
 
