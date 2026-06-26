@@ -449,23 +449,7 @@
   </main>
 
 
-  <script>
-    if (localStorage.getItem("vsmr_app") !== "true") {
-      location.replace("/");
-    }
-  </script>
-
-  <script>
-    const isPWA =
-      window.matchMedia('(display-mode: standalone)').matches ||
-      window.navigator.standalone === true;
-
-    if (!isPWA) {
-      location.replace("/");
-    }
-  </script>
-
-
+ 
 
 
 
