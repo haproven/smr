@@ -25,70 +25,8 @@
 
       <a href="javascript:void(0)" class="logo" onclick="toggleMenu()">
         <img src="/assets/img/vishnupursmr-icon.webp" alt="" style="height: 6vh; margin-top: 9px;">
-        <button onclick="openInfo()">ℹ️ Info</button>
       </a>
-
-
-      <section id="infoBox">
-        <button class="close-btn" onclick="closeInfo()">×</button>
-
-        <h2>Vishnupur SMR</h2>
-        <p>
-          Vishnupur SMR ka official information section.
-        </p>
-
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </section>
-
-      <style>
-        #infoBox {
-          position: fixed;
-          top: 0;
-          right: -320px;
-          width: 300px;
-          height: 100vh;
-          background: #111;
-          color: white;
-          padding: 20px;
-          transition: .3s;
-          z-index: 1000;
-        }
-
-        #infoBox.active {
-          right: 0;
-        }
-
-        .close-btn {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          border: none;
-          background: none;
-          color: white;
-          font-size: 24px;
-          cursor: pointer;
-        }
-
-        #infoBox a {
-          display: block;
-          color: white;
-          margin: 10px 0;
-          text-decoration: none;
-        }
-      </style>
-
-      <script>
-        function openInfo() {
-          document.getElementById("infoBox").classList.add("active");
-        }
-
-        function closeInfo() {
-          document.getElementById("infoBox").classList.remove("active");
-        }
-      </script>
-
-
+      
       <div class="m-senter">
         <h1>विष्णुपुर(सीतामढ़ी)</h1>
         <b>app</b>
