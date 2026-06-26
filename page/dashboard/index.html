@@ -451,15 +451,14 @@
 
 
 
-  <script>
-    const isPWA =
-      window.matchMedia('(display-mode: standalone)').matches ||
-      window.navigator.standalone === true;
+<script>
+const isPWA =
+    window.matchMedia('(display-mode: standalone)').matches ||
+    window.navigator.standalone === true;
 
-    if (!isPWA) {
-      window.location.replace("/index.html");
-    }
-  </script>
+document.body.innerHTML =
+    "<h1>PWA: " + isPWA + "</h1>";
+</script>
 
 
 
