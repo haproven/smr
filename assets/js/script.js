@@ -14,20 +14,6 @@ closeBtn.addEventListener("click", () => {
 
 
 
-const isPWA =
-  window.matchMedia('(display-mode: standalone)').matches ||
-  window.navigator.standalone === true;
-
-if (
-  window.location.pathname.startsWith("/page/dashboard") &&
-  !isPWA
-) {
-  window.location.replace("/");
-}
-
-
-
-
 
 
 
