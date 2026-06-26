@@ -565,14 +565,16 @@
 
 
 
-  <body>
 
     <!-- Tumhara content -->
 
+    <script>
+      window.addEventListener('appinstalled', () => {
+        localStorage.setItem('vsmr_app', 'true');
+      });
+    </script>
 
 
-
-  </body>
   <script src="/2.JS/app.js"></script>
   <script src="/assets/js/script.js"></script>
 </body>
