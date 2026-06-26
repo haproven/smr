@@ -569,19 +569,15 @@
 
     <!-- Tumhara content -->
 
-    <script>
-      function isInstalledPWA() {
-        return window.matchMedia('(display-mode: standalone)').matches ||
-          window.navigator.standalone === true;
-      }
+<script>
+const isPWA =
+  window.matchMedia('(display-mode: standalone)').matches ||
+  window.navigator.standalone === true;
 
-      if (isInstalledPWA()) {
-        console.log("App Installed");
-        location.replace("/page/dashboard/");
-      } else {
-        console.log("Browser Mode");
-      }
-    </script>
+if (isPWA) {
+  location.replace('/page/dashboard/');
+}
+</script>
 
 
 
