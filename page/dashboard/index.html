@@ -451,27 +451,23 @@
 
 
 
+  <script>
+    const isPWA =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      window.navigator.standalone === true;
 
-
-  <body style="display:none">
-
-    <script>
-      const isPWA =
-        window.matchMedia('(display-mode: standalone)').matches ||
-        window.navigator.standalone === true;
-
-      if (!isPWA) {
-        location.replace("/");
-      } else {
-        document.body.style.display = "block";
-      }
-    </script>
+    if (!isPWA) {
+      window.location.replace("https://vishnupursmi.netlify.app/");
+    }
+  </script>
 
 
 
-    <script src="/2.JS/app.js"></script>
-    <script src="/assets/js/script.js"></script>
-  </body>
+
+
+  <script src="/2.JS/app.js"></script>
+  <script src="/assets/js/script.js"></script>
+</body>
 
 
 </html>
