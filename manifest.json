@@ -1,10 +1,12 @@
+
+
 {
   "name": "Vishnupur SMR Official",
   "short_name": "Vishnupur SMR",
   "description": "Official digital platform of Vishnupur, Sitamarhi (Bihar), providing village information, community updates, local services, development records, and important announcements.",
   "start_url": "/page/dashboard/",
   "scope": "/",
-  "display": "standalone",
+  "display": "fullscreen", 
   "orientation": "portrait",
   "theme_color": "#4b6cb7",
   "background_color": "#faf8d7f8",
@@ -17,7 +19,8 @@
     {
       "src": "/assets/img/vishnupursmr-logo.webp",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose":"maskable"
     }
   ],
   "prefer_related_applications": false
