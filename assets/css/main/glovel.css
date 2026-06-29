@@ -84,12 +84,11 @@
 
 
 header {
-    z-index: 1;
+    z-index: 999;
     position: sticky;
     top: 0;
     padding: 0 5px;
     background: #fbfbfb;
-
 }
 
 .logo {
