@@ -499,7 +499,7 @@ h2 {
         box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
         padding: 0.3rem;
         bottom: 0;
-        z-index: 999;
+        z-index: 9;
     }
 
 
@@ -630,7 +630,7 @@ h2 {
     color: white;
     padding: 20px;
     transition: .3s;
-    z-index: 1000;
+    /* z-index: 10; */
 }
 
 #infoBox.active {
@@ -638,7 +638,7 @@ h2 {
     /* Open hoga */
 }
 
-.close-btn {
+.close-btn2 {
     position: absolute;
     top: 10px;
     right: 10px;

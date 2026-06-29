@@ -84,7 +84,7 @@
 
 
 header {
-    z-index: 9999;
+    z-index: 99;
     position: sticky;
     top: 0;
     padding: 0 5px;
@@ -103,7 +103,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: rgb(0, 0, 0);
-    z-index: 99;
+    z-index: 9;
 }
 
 .menu {
@@ -113,12 +113,12 @@ header {
 .menu li,
 a {
     text-decoration: none;
-    display: block ;
+    display: block;
     margin: 5px;
 }
 
 a {
-    color: rgba(68, 117, 241, 0.758) ;
+    color: rgba(68, 117, 241, 0.758);
 }
 
 a:hover {
@@ -157,14 +157,15 @@ a:hover {
 /* Close Button */
 .close-btn {
     position: absolute;
-    right: 19px;
+    /* right: 19px; */
+    right: 244px;
     top: -3px;
     font-size: 30px;
     color: white;
     cursor: pointer;
 }
 
-.info{
+.info {
     background-color: #000;
 }
 
@@ -184,10 +185,14 @@ a:hover {
         display: none;
     } */
 
+    .close-btn {
+        right: 172px;
+    }
+
     .side-menu {
 
-    width: 226px;
-}
+        width: 226px;
+    }
 
     .m-senter {
         text-align: center;
